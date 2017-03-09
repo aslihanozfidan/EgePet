@@ -19,20 +19,20 @@
             <div class="nav-container">
                 <div class="nav-item" (tap)="start.close()">
                     <a [routerLink]="['/create']" style="outline: none;">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_create_new_shopping_list.png">
-                        <span class="sidenav-tems-align">Create new shopping list</span>
+                    <md-icon>visibility</md-icon>
+                        <span class="sidenav-tems-align">Bildirimler</span>
                     </a>
                 </div>
                 <div class="nav-item" (tap)="start.close()">
                     <a [routerLink]="['/lists']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_my_shopping_list.png">
-                        <span class="sidenav-tems-align">My shopping lists</span>
+                        <md-icon>pets</md-icon>
+                        <span class="sidenav-tems-align">Dostlar</span>
                     </a>
                 </div>
                 <div class="nav-item" style="display: none" id="edit" (tap)="start.close()">
                     <a [routerLink]="['/editlist',{email:localUser}]">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_edit_shopping_list.png">
-                        <span class="sidenav-tems-align">Edit shopping list</span>
+                        
+                        <span class="sidenav-tems-align">Ayarlar</span>
                     </a>
                 </div>
                 <div class="nav-item" style="display: none" id="clear" (tap)="start.close()">
@@ -61,8 +61,8 @@
                 </div>
                 <div class="nav-item" (tap)="start.close()">
                     <a [routerLink]="['/help']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_help.png">
-                        <span class="sidenav-tems-align">Help</span>
+                        <md-icon>settings</md-icon>
+                        <span class="sidenav-tems-align">Ayarlar</span>
                     </a>
                 </div>
             </div>
@@ -73,20 +73,20 @@
             <div class="nav-container">
                 <div class="nav-item">
                     <a [routerLink]="['/create']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_create_new_shopping_list.png">
-                        <span class="sidenav-tems-align">Create new shopping list</span>
+                        <md-icon>visibility</md-icon>
+                        <span class="sidenav-tems-align">Bildirimler</span>
                     </a>
                 </div>
                 <div class="nav-item">
                     <a [routerLink]="['/lists']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_my_shopping_list.png">
-                        <span class="sidenav-tems-align">My shopping lists</span>
+                       <md-icon>pets</md-icon>
+                        <span class="sidenav-tems-align">Dostlar</span>
                     </a>
                 </div>
                 <div class="nav-item" style="display: none" id="edit">
                     <a [routerLink]="['/editlist',{email:localUser}]">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_edit_shopping_list.png">
-                        <span class="sidenav-tems-align">Edit shopping list</span>
+                        <md-icon>pets</md-icon>
+                        <span class="sidenav-tems-align">Dostlar</span>
                     </a>
                 </div>
                 <div class="nav-item" style="display: none" id="clear">
@@ -115,8 +115,8 @@
                 </div>
                 <div class="nav-item">
                     <a [routerLink]="['/help']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_help.png">
-                        <span class="sidenav-tems-align">Help</span>
+                        <md-icon>settings</md-icon>
+                        <span class="sidenav-tems-align">Ayarlar</span>
                     </a>
                 </div>
             </div>
