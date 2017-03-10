@@ -7,6 +7,7 @@ const routes: Routes = [
  { path: '', redirectTo: '/index', pathMatch: 'full' },
  { path: 'home', loadChildren: './+home/home.module#HomeModule' },
  { path: 'forgot', loadChildren: './+forgot/forgot.module#ForgotModule' },
+  { path: 'dost', loadChildren: './+dost/dost.module#DostModule' },
  { path: 'create', loadChildren: './+create/create.module#CreateModule' },
   { path: 'help', loadChildren: './+help/help.module#HelpModule' },
   { path: 'list/:id', loadChildren: './+list/list.module#ListModule' },
