@@ -1,17 +1,14 @@
 <div style="height:100%">
     <md-toolbar color="primary">
-
-        <span style="padding-left: 1em;">
-<span *ngIf="isMobile" (tap)="hideNav()">
-    
-
-    <md-icon>menu</md-icon>
-    </span>
-    <span style="position: absolute;left:35%;"><img src=".\src\assets\images\logo.png" style="height: 30px;"></span>
-
-    <span style="position: absolute;right: 2em;"><img src=".\src\assets\images\profile.png" style="height: 24px;"></span>
-
-        </span>
+        <ul class="top-nav">
+            <li style="padding-left: 1em;">
+                <span *ngIf="isMobile" (tap)="hideNav()">
+                <md-icon>menu</md-icon>
+            </span>
+            </li>
+            <li><img src=".\src\assets\images\logo.png" style="height: 30px;"></li>
+            
+        </ul>
     </md-toolbar>
 
     <md-sidenav-container>
@@ -19,7 +16,7 @@
             <div class="nav-container">
                 <div class="nav-item" (tap)="start.close()">
                     <a [routerLink]="['/create']" style="outline: none;">
-                    <md-icon>visibility</md-icon>
+                        <md-icon>visibility</md-icon>
                         <span class="sidenav-tems-align">Bildirimler</span>
                     </a>
                 </div>
@@ -27,36 +24,6 @@
                     <a [routerLink]="['/lists']">
                         <md-icon>pets</md-icon>
                         <span class="sidenav-tems-align">Dostlar</span>
-                    </a>
-                </div>
-                <div class="nav-item" style="display: none" id="edit" (tap)="start.close()">
-                    <a [routerLink]="['/editlist',{email:localUser}]">
-                        
-                        <span class="sidenav-tems-align">Ayarlar</span>
-                    </a>
-                </div>
-                <div class="nav-item" style="display: none" id="clear" (tap)="start.close()">
-                    <a [routerLink]="['/clearlist',{email:localUser}]">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_clear_shopping_list.png">
-                        <span class="sidenav-tems-align">Clear shopping list</span>
-                    </a>
-                </div>
-                <div class="nav-item" style="display: none" id="delete" (tap)="start.close()">
-                    <a [routerLink]="['/deletelist',{email:localUser}]">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_delete-shopping_list.png">
-                        <span class="sidenav-tems-align">Delete shopping list</span>
-                    </a>
-                </div>
-                <div class="nav-item" style="display: none" id="finished" (tap)="start.close()">
-                    <a [routerLink]="['/finishlist']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_mark_shopping_as_finished.png">
-                        <span class="sidenav-tems-align">Mark shopping as finished</span>
-                    </a>
-                </div>
-                <div class="nav-item" *ngIf="localUser" (tap)="start.close()">
-                    <a [routerLink]="['/manage']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_manage_catalog.png">
-                        <span class="sidenav-tems-align">Manage catalog</span>
                     </a>
                 </div>
                 <div class="nav-item" (tap)="start.close()">
@@ -79,38 +46,8 @@
                 </div>
                 <div class="nav-item">
                     <a [routerLink]="['/lists']">
-                       <md-icon>pets</md-icon>
-                        <span class="sidenav-tems-align">Dostlar</span>
-                    </a>
-                </div>
-                <div class="nav-item" style="display: none" id="edit">
-                    <a [routerLink]="['/editlist',{email:localUser}]">
                         <md-icon>pets</md-icon>
                         <span class="sidenav-tems-align">Dostlar</span>
-                    </a>
-                </div>
-                <div class="nav-item" style="display: none" id="clear">
-                    <a [routerLink]="['/clearlist',{email:localUser}]">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_clear_shopping_list.png">
-                        <span class="sidenav-tems-align">Clear shopping list</span>
-                    </a>
-                </div>
-                <div class="nav-item" style="display: none" id="delete">
-                    <a [routerLink]="['/deletelist',{email:localUser}]">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_delete-shopping_list.png">
-                        <span class="sidenav-tems-align">Delete shopping list</span>
-                    </a>
-                </div>
-                <div class="nav-item" style="display: none" id="finished">
-                    <a [routerLink]="['/finishlist']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_mark_shopping_as_finished.png">
-                        <span class="sidenav-tems-align">Mark shopping as finished</span>
-                    </a>
-                </div>
-                <div class="nav-item" *ngIf="localUser">
-                    <a [routerLink]="['/manage']">
-                        <img class="sidenav-tems-align" height="24px;" width="24px;" src="./../assets/images/nav_manage_catalog.png">
-                        <span class="sidenav-tems-align">Manage catalog</span>
                     </a>
                 </div>
                 <div class="nav-item">
@@ -121,19 +58,26 @@
                 </div>
             </div>
         </md-sidenav>
-           
+
         <div class="content">
             <div class="app-main-container">
                 <router-outlet></router-outlet>
             </div>
             <div class="app-footer-container" color="primary">
-                <span style="width:60%">Get in touch with us</span>
-                <span style="width:10%"><img height="24px" src="./../assets/images/btn-footer-facebook.png"></span>
-                <span style="width:10%"><img height="24px" src="./../assets/images/btn-footer-twitter.png"></span>
-                <span style="width:10%"><img height="24px" src="./../assets/images/btn-footer-mail.png"></span>
+                <ul>
+                    <li>
+                        <md-icon>home</md-icon>
+                    </li>
+                    <li>
+                        <md-icon>pets</md-icon>
+                    </li>
+                    <li>
+                        <md-icon>person</md-icon>
+                    </li>
+                </ul>
             </div>
         </div>
     </md-sidenav-container>
 
-     
+
 </div>

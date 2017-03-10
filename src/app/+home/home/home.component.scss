@@ -1,7 +1,9 @@
 .start-container{
-    height:100%;
+    min-height:605px;
     text-align: center;
-    
+    background-image: url("/../assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; 
 }
 .start-alignment{
     display: flex;
@@ -10,10 +12,9 @@
     margin-top: 2px;
 }
 .start-content{
-    text-align: start;
     background-color: rgba(255, 255, 255, 0.5);
     width:80%;
-    min-height: 400px;
+    min-height: 350px;
     margin:auto;
 }
 

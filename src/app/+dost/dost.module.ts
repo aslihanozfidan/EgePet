@@ -18,4 +18,4 @@ import { UsersService } from './../services/users.service';
   declarations: [DostComponent],
   providers: [UsersService],
 })
-export class dostModule { }
+export class DostModule { }

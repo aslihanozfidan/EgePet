@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DostComponent } from './dost/dost.component';
 
 const routes: Routes = [
-  { path: '', component: DostComponent },
+  { path: 'dost/:dostName', component: DostComponent },
 ];
 
 @NgModule({
