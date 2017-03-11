@@ -11,7 +11,9 @@ import { IndexModule } from './index/index.module';
 import { firebaseConfig } from './config/firebase-config';
 import { UsersService } from './services/users.service';
 import { AppComponent } from './app.component';
-
+import { DostModule } from './+dost/dost.module';
+import { HomeModule } from './+home/home.module';
+import { ForgotModule } from './+forgot/forgot.module';
 
 
 // app main bootstrap
@@ -26,7 +28,10 @@ import { AppComponent } from './app.component';
     MaterialModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig),
     AppRoutingModule,
-    IndexModule
+    IndexModule,
+    DostModule,
+    HomeModule,
+    ForgotModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }, UsersService],
   bootstrap: [AppComponent]

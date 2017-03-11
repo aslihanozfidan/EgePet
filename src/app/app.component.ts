@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild,OnDestroy,HostListener } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-
+import { HomeModule } from './+home/home.module';
+import { DostModule } from './+dost/dost.module';
 declare var PouchDB: any;
 
 @Component({
