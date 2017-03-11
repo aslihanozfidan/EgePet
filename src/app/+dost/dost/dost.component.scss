@@ -1,8 +1,13 @@
 .start-container{
-    min-height:570px;
+    height: 100%;
     text-align: center;
     background-color: #bfc6d0;
 }
+@media screen and (height:736px) { .start-container{ height:624px;} }
+@media screen and (height:640px) { .start-container{ height:calc(640px - 112px);} }
+@media screen and (height:732px) { .start-container{ height:630px;} }
+@media screen and (height:568px) { .start-container{ height:calc(568px - 112px);} }
+@media screen and (height:667px) { .start-container{ height:calc(667px - 112px);} }
 .start-alignment{
     display: flex;
     flex-direction: column;
