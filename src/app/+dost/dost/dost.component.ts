@@ -16,7 +16,7 @@ import { user } from './../../model/user';
 })
 
 export class DostComponent implements OnInit, OnDestroy {
-    dostName;
+    dostName="tobby";
    
     private commentsUrl = 'api';
     private users: user[];
