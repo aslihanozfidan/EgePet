@@ -3,6 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { HomeModule } from './+home/home.module';
 import { DostModule } from './+dost/dost.module';
+import { DurumComponent } from './+dost/durum/durum.component';
 declare var PouchDB: any;
 
 @Component({

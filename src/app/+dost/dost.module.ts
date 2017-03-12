@@ -5,6 +5,7 @@ import { MaterialModule } from '@angular/material';
 import { DostRoutingModule } from './dost.routing';
 import { SharedModule } from './../shared/shared.module';
 import { DostComponent } from './dost/dost.component';
+import { DurumComponent } from './durum/durum.component';
 import { UsersService } from './../services/users.service';
 
 // dost module bootstrap
@@ -15,7 +16,7 @@ import { UsersService } from './../services/users.service';
     CommonModule
   ],
   exports: [],
-  declarations: [DostComponent],
+  declarations: [DostComponent, DurumComponent],
   providers: [UsersService],
 })
 export class DostModule { }
