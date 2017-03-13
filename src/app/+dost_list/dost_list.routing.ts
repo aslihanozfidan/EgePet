@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DostListComponent } from './dost_list/dost_list.component';
 
 export const routes: Routes = [
-  { path: 'lolo', component: DostListComponent}  
+  { path: 'liste', component: DostListComponent}  
 ];
 
 @NgModule({

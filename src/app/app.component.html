@@ -63,27 +63,27 @@
             <div class="app-main-container">
                 <router-outlet></router-outlet>
             </div>
-            <div class="app-footer-container" color="primary">
-                <ul>
-                    <a [routerLink]="['bildirimler']">
-                        <li>
-                            <md-icon>home</md-icon>
-                        </li>
-                    </a>
-                    <a [routerLink]="['dost']">
-                        <li>
-                            <md-icon>pets</md-icon>
-                        </li>
-                    </a>
-                    <a [routerLink]="['profil']">
-                        <li>
-                            <md-icon>person</md-icon>
-                        </li>
-                    </a>
-                </ul>
-            </div>
         </div>
+
     </md-sidenav-container>
 
-
+    <div class="app-footer-container" color="primary">
+        <ul>
+            <li>
+                <a [routerLink]="['bildirimler']">
+                    <md-icon>home</md-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['liste']">
+                    <md-icon>pets</md-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['profil']">
+                    <md-icon>person</md-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>

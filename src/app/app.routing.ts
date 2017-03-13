@@ -8,7 +8,7 @@ export const routes: Routes = [
  { path: 'home', loadChildren: './+home/home.module#HomeModule' },
  { path: 'forget', loadChildren: './+forget/forget.module#ForgetModule' },
  { path: 'profile', loadChildren: './+profile/profile.module#ProfileModule' },
- { path: 'dost_list', loadChildren: './+dost_list/dost_list.module#DostListModule' }, 
+ { path: 'hayvanlar', loadChildren: './+dost_list/dost_list.module#DostListModule' }, 
   { path: 'dost', loadChildren: './+dost/dost.module#DostModule' },
   { path: 'help', loadChildren: './+help/help.module#HelpModule' },
   { path: 'list/:id', loadChildren: './+list/list.module#ListModule' },

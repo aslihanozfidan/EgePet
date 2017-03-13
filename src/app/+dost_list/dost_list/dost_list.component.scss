@@ -1,7 +1,10 @@
 .start-container{
-    height: 100%;
+    min-height: 800px;
+    height: auto;
     text-align: center;
     background-color: #bfc6d0;
+    padding:10px;
+    overflow: hidden;
 }
 @media screen and (height:736px) { .start-container{ height:624px;} }
 @media screen and (height:640px) { .start-container{ height:calc(640px - 112px);} }
@@ -16,38 +19,61 @@
 }
 
 .dost-container{
-    margin-top:-120px;
+    width:100%;
+    height: 165px;
+    float: left;
+    position: relative;
+    padding: 5px;
+    margin-bottom: 10px;
+    border:3px solid #2b3f60;
 }
 
 .dost-container img{
-    border-radius:100px;
-    width:100px;
-    height: 100px;
+    border-radius:110px;
+    width:110px;
+    height: 110px;
     margin:auto;
+    margin-top: 20px;
     border:5px solid #2b3f60;
+    float: left;
 }
 
 .dost-info{
-    width:85%;
-    height: 40px;
-    margin:Auto;
-    border-bottom: 2px solid #2b3f60;
-    list-style: none;
-    padding-left: 0px;
+    float: right;
+    margin-top: 25px; 
 }
 
-.dost-info li{
-    float: left;
-    height: 40px;
-    line-height: 40px;
-    width:33.3%;
+.txt-name{
+    width:100%;
     text-align: center;
-    color:#2b3f60;
-    font-weight: bold;
+    font-size: 18px;
+    color: #2b3f60;
+    font-weight: bold;    
+    line-height: 25px;
 }
 
-.dost-info li:last-child, .dost-info li:first-child{
+.txt-besin{
+    width:100%;
+    text-align: center;
+    color: #015301;
     font-size: 12px;
+    line-height: 17px;
+}
+
+.txt-saglik{
+    width:100%;
+    text-align: center;
+    color: #660b0b;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.txt-lokasyon{
+    width:100%;
+    text-align: center;
+    color: #270153;
+    font-size: 12px;
+    line-height: 17px;
 }
 
 .baslik{
