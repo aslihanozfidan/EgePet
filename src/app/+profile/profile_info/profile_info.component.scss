@@ -1,0 +1,48 @@
+.start-container{
+    min-height: 600px;
+    height: auto;
+    text-align: center;
+    background-color: #bfc6d0;
+}
+
+.start-inside{
+    min-height: 400px;
+}
+
+.uye-info{
+    width:85%;
+    height: 40px;
+    margin:Auto;
+    border-bottom: 2px solid #2b3f60;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.uye-info li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width:100%;
+    text-align: center;
+    color:#2b3f60;
+    font-weight: bold;
+}
+
+
+.baslik{
+    width:100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color:#2b3f60;
+    margin-top: 10px;
+}
+
+.baslik-volunteer{
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    color:#ffffff;
+}

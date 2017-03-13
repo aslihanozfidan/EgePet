@@ -16,7 +16,7 @@ import { HomeModule } from './+home/home.module';
 import { ForgetModule } from './+forget/forget.module';
 import { DostListModule } from './+dost_list/dost_list.module';
 import { ProfileModule } from './+profile/profile.module';
-
+import { BildirimModule } from './+bildirim/bildirim.module';
 
 // app main bootstrap
 @NgModule({
@@ -35,7 +35,8 @@ import { ProfileModule } from './+profile/profile.module';
     HomeModule,
     ForgetModule,
     ProfileModule,
-    DostListModule
+    DostListModule,
+    BildirimModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }, UsersService],
   bootstrap: [AppComponent]

@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DostComponent } from '../+dost/dost/dost.component';
-import { DostMainComponent } from '../+dost/dost_main/dost_main.component';
-import { DurumComponent } from '../+dost/durum/durum.component';
-import { DostListComponent } from '../+dost_list/dost_list/dost_list.component';
+
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileInfoComponent } from './profile_info/profile_info.component';
+import { MessageComponent } from './message/message.component';
+import { ChangePasswordComponent } from './change_password/change_password.component';
 
 export const routes: Routes = [
-  { path: 'profil', component: ProfileComponent}  
+  { path: 'profil', component: ProfileComponent, children: [
+    { path: 'bilgi', component: ProfileInfoComponent},
+    { path: 'mesajlar', component: MessageComponent},
+    { path: 'sifredegistir', component: ChangePasswordComponent }
+  ] },
 ];
 
 @NgModule({

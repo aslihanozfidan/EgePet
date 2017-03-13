@@ -7,6 +7,9 @@ import { SharedModule } from './../shared/shared.module';
 import { UsersService } from './../services/users.service';
 
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileInfoComponent } from './profile_info/profile_info.component';
+import { ChangePasswordComponent } from './change_password/change_password.component';
+import { MessageComponent } from './message/message.component';
 
 // dost module bootstrap
 @NgModule({
@@ -16,7 +19,7 @@ import { ProfileComponent } from './profile/profile.component';
     CommonModule
   ],
   exports: [],
-  declarations: [ ProfileComponent],
+  declarations: [ ProfileComponent, ProfileInfoComponent, ChangePasswordComponent, MessageComponent],
   providers: [UsersService],
 })
 export class ProfileModule { }
