@@ -8,13 +8,13 @@ import { UsersService } from './../../services/users.service';
 import { user } from './../../model/user';
 
 @Component({
-    selector: 'forgot',
-    templateUrl: './forgot.component.html',
-    styleUrls: ['./forgot.component.scss'],
+    selector: 'forget',
+    templateUrl: './forget.component.html',
+    styleUrls: ['./forget.component.scss'],
     providers:[UsersService]
 })
 
-export class ForgotComponent implements OnInit,OnDestroy  {
+export class ForgetComponent implements OnInit,OnDestroy  {
     private commentsUrl = 'api';
     private users:user[];
     constructor(

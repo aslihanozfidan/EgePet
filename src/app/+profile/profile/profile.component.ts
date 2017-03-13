@@ -8,16 +8,15 @@ import { SharedComponent } from './../../shared/shared.component';
 import { UsersService } from './../../services/users.service';
 import { user } from './../../model/user';
 
-
 @Component({
-    selector: 'dost',
-    templateUrl: './dost.component.html',
-    styleUrls: ['./dost.component.scss'],
+    selector: 'profile',
+    templateUrl: './profile.component.html',
+    styleUrls: ['./profile.component.scss'],
     providers: [UsersService]
 })
 
-export class DostComponent implements OnInit, OnDestroy {
-    dostName="tobby";
+export class ProfileComponent implements OnInit, OnDestroy {
+   
    
     private commentsUrl = 'api';
     private users: user[];
@@ -31,7 +30,7 @@ export class DostComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        this.route.params.subscribe(key => this.dostName = key["dostName"]);
+      
     }
 
 

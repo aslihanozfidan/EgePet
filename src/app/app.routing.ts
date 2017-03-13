@@ -6,8 +6,10 @@ import { Routes, RouterModule,PreloadAllModules  } from '@angular/router';
 export const routes: Routes = [
  { path: '', redirectTo: '/index', pathMatch: 'full' },
  { path: 'home', loadChildren: './+home/home.module#HomeModule' },
- { path: 'forgot', loadChildren: './+forgot/forgot.module#ForgotModule' },
- { path: 'create', loadChildren: './+create/create.module#CreateModule' },
+ { path: 'forget', loadChildren: './+forget/forget.module#ForgetModule' },
+ { path: 'profile', loadChildren: './+profile/profile.module#ProfileModule' },
+ { path: 'dost_list', loadChildren: './+dost_list/dost_list.module#DostListModule' }, 
+  { path: 'dost', loadChildren: './+dost/dost.module#DostModule' },
   { path: 'help', loadChildren: './+help/help.module#HelpModule' },
   { path: 'list/:id', loadChildren: './+list/list.module#ListModule' },
   { path: 'manage', loadChildren: './+manage/manage.module#ManageModule' },
@@ -15,8 +17,7 @@ export const routes: Routes = [
   { path: 'editlist', loadChildren: './+edit/edit.module#EditModule' },
   { path: 'clearlist', loadChildren: './+clear/clear.module#ClearModule' },
   { path: 'deletelist', loadChildren: './+delete/delete.module#DeleteModule' },
-  { path: 'finishlist', loadChildren: './+finish/finish.module#FinishModule' },
-  { path: 'dost', loadChildren: './+dost/dost.module#DostModule' }
+  { path: 'finishlist', loadChildren: './+finish/finish.module#FinishModule' }
 ];
 
 @NgModule({

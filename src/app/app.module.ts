@@ -13,7 +13,9 @@ import { UsersService } from './services/users.service';
 import { AppComponent } from './app.component';
 import { DostModule } from './+dost/dost.module';
 import { HomeModule } from './+home/home.module';
-import { ForgotModule } from './+forgot/forgot.module';
+import { ForgetModule } from './+forget/forget.module';
+import { DostListModule } from './+dost_list/dost_list.module';
+import { ProfileModule } from './+profile/profile.module';
 
 
 // app main bootstrap
@@ -31,7 +33,9 @@ import { ForgotModule } from './+forgot/forgot.module';
     IndexModule,
     DostModule,
     HomeModule,
-    ForgotModule
+    ForgetModule,
+    ProfileModule,
+    DostListModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }, UsersService],
   bootstrap: [AppComponent]

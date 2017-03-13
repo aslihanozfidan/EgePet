@@ -7,7 +7,7 @@
             </span>
             </li>
             <li><img src=".\src\assets\images\logo.png" style="height: 30px;"></li>
-            
+
         </ul>
     </md-toolbar>
 
@@ -15,19 +15,19 @@
         <md-sidenav *ngIf="isMobile" #start mode="over" opened="false" (open)="closeStartButton.focus()">
             <div class="nav-container">
                 <div class="nav-item" (tap)="start.close()">
-                    <a [routerLink]="['/create']" style="outline: none;">
+                    <a [routerLink]="['bildirimler']" style="outline: none;">
                         <md-icon>visibility</md-icon>
                         <span class="sidenav-tems-align">Bildirimler</span>
                     </a>
                 </div>
                 <div class="nav-item" (tap)="start.close()">
-                    <a [routerLink]="['/lists']">
+                    <a [routerLink]="['dost']">
                         <md-icon>pets</md-icon>
                         <span class="sidenav-tems-align">Dostlar</span>
                     </a>
                 </div>
                 <div class="nav-item" (tap)="start.close()">
-                    <a [routerLink]="['/help']">
+                    <a [routerLink]="['ayarlar']">
                         <md-icon>settings</md-icon>
                         <span class="sidenav-tems-align">Ayarlar</span>
                     </a>
@@ -65,15 +65,21 @@
             </div>
             <div class="app-footer-container" color="primary">
                 <ul>
-                    <li>
-                        <md-icon>home</md-icon>
-                    </li>
-                    <li>
-                        <md-icon>pets</md-icon>
-                    </li>
-                    <li>
-                        <md-icon>person</md-icon>
-                    </li>
+                    <a [routerLink]="['bildirimler']">
+                        <li>
+                            <md-icon>home</md-icon>
+                        </li>
+                    </a>
+                    <a [routerLink]="['dost']">
+                        <li>
+                            <md-icon>pets</md-icon>
+                        </li>
+                    </a>
+                    <a [routerLink]="['profil']">
+                        <li>
+                            <md-icon>person</md-icon>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>

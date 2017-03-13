@@ -1,9 +1,12 @@
 import { Component, OnInit, ViewChild,OnDestroy,HostListener } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-import { HomeModule } from './+home/home.module';
-import { DostModule } from './+dost/dost.module';
-import { DurumComponent } from './+dost/durum/durum.component';
+import { HomeComponent } from './+home/home/home.component';
+import { DostComponent } from './+dost/dost/dost.component';
+
+import { ForgetComponent } from './+forget/forget/forget.component';
+import { DostListComponent } from './+dost_list/dost_list/dost_list.component';
+import { ProfileComponent } from './+profile/profile/profile.component';
 declare var PouchDB: any;
 
 @Component({
