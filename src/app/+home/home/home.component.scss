@@ -1,9 +1,7 @@
+
 .start-container{
-    min-height:605px;
+    min-height:705px;
     text-align: center;
-    background-image: url("/../assets/images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%; 
 }
 .start-alignment{
     display: flex;
@@ -12,33 +10,23 @@
     margin-top: 2px;
 }
 .start-content{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('/../assets/images/bg_login.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     width:80%;
     min-height: 350px;
     margin:auto;
+    margin-top:50px;
 }
 
 .start-inside{
-    padding-top: 30px;
-    width: 65%;
+    padding-top: 70px;
+    width: 75%;
     margin: auto;
-}
-
-.txt-register, .txt-or{
-    width:100%;
-    color:#2b3f60;
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-    margin: auto;
-}
-
-.txt-or{
-    font-size: 14px;
 }
 
 .button-container{
-    width:90%;
+    width:100%;
     margin:auto;
 }
 
@@ -52,10 +40,11 @@
 .button-forgot{
     margin: auto;
     height: 30px;
-    width:150px;
-    text-align: center;
+    width:100%;
+    text-align: right;
     line-height: 30px;
     font-weight: 500;
+    font-size: 13px;
 }
 
 .button-login{
@@ -64,8 +53,18 @@
     border-radius: 5px;
     color:white;
     height: 30px;
-    width:80px;
+    width:100%;
     text-align: center;
     line-height: 30px;
+    margin-top: 10px;
 }
 
+.button-register{
+    width:100%;
+    color:#2b3f60;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 20px;
+}

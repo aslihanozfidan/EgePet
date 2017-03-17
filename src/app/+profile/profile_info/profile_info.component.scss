@@ -1,41 +1,53 @@
-.start-container{
-    min-height: 600px;
-    height: auto;
-    text-align: center;
-    background-color: #bfc6d0;
-}
-
-.start-inside{
-    min-height: 400px;
-}
-
-.uye-info{
-    width:85%;
-    height: 40px;
+.profile-info-container{
+    width:140px;
+    height: 30px;
     margin:Auto;
-    border-bottom: 2px solid #2b3f60;
-    list-style: none;
-    padding-left: 0px;
+    color:#2b3f60;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    margin-top:20px;
 }
 
-.uye-info li{
+.profile-info-container a{
+    color:#2b3f60;
+    text-decoration: none;
+}
+
+md-icon, .txt-info{
     float: left;
-    height: 40px;
-    line-height: 40px;
-    width:100%;
     text-align: center;
-    color:#2b3f60;
-    font-weight: bold;
 }
 
+.icon-message{    
+    color:#212121;
+}
 
-.baslik{
+.icon-favorite{    
+    color:#015301;
+}
+
+.volunteer-container{
     width:100%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    color:#2b3f60;
+    height: 130px;
     margin-top: 10px;
+    background-color: #2b3f60;
+    border-bottom:2px solid #ffffff;
+    position: absolute;
+    bottom:42px;
+}
+
+.volunteer{
+    width:90%;
+    height: auto;
+    margin:auto;
+}
+
+.volunteer img{
+    width:23%;
+    height: 23%;
+    float: left;
+    margin: 2px;
 }
 
 .baslik-volunteer{
@@ -43,6 +55,6 @@
     height: 30px;
     line-height: 30px;
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
     color:#ffffff;
 }

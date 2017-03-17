@@ -1,42 +1,58 @@
 <div class="start-container start-alignment">
   <div class="dost-container">
+    <a [routerLink]="['/dost/:dostName/bilgi']">
+      <div class="photo-container">
     <img src="/src/assets/images/profile1.jpg" />
-    <div class="dost-info">
-      <div class="txt-name">OSCAR</div>
-      <div class="txt-besin"><b>Beslenme Durumu:</b> Beslendi</div>
-      <div class="txt-saglik"><b>Sağlık Durumu:</b> Normal</div>
-      <div class="txt-lokasyon">Yakınında!</div>
     </div>
+      <div class="dost-info">
+        <div class="txt-name">OSCAR</div>
+        <div class="txt-besin"><b>Beslenme:</b> Beslendi</div>
+        <div class="txt-saglik"><b>Sağlık:</b> Normal</div>
+        <div class="txt-lokasyon">Yakınında!</div>
+      </div>
+    </a>
   </div>
 
   <div class="dost-container">
+    <a [routerLink]="['/dost/:dostName/bilgi']">
+    <div class="photo-container">
     <img src="/src/assets/images/profile1.jpg" />
+    </div>
     <div class="dost-info">
       <div class="txt-name">OSCAR</div>
-      <div class="txt-besin"><b>Beslenme Durumu:</b> Aç</div>
-      <div class="txt-saglik"><b>Sağlık Durumu:</b> Normal</div>
+      <div class="txt-besin"><b>Beslenme:</b> Aç</div>
+      <div class="txt-saglik"><b>Sağlık :</b> Normal</div>
       <div class="txt-lokasyon">Kampüs Dışında!</div>
     </div>
+    </a>
   </div>
 
-    <div class="dost-container">
-      <img src="/src/assets/images/profile1.jpg" />
-      <div class="dost-info">
-        <div class="txt-name">OSCAR</div>
-        <div class="txt-besin"><b>Beslenme Durumu:</b> Beslendi</div>
-        <div class="txt-saglik"><b>Sağlık Durumu:</b> Tehlikede</div>
-        <div class="txt-lokasyon">Biraz Uzak!</div>
-      </div>
+  <div class="dost-container">
+    <a [routerLink]="['/dost/:dostName/bilgi']">
+    <div class="photo-container">
+    <img src="/src/assets/images/profile1.jpg" />
     </div>
-
-      <div class="dost-container">
-        <img src="/src/assets/images/profile1.jpg" />
-        <div class="dost-info">
-          <div class="txt-name">OSCAR</div>
-          <div class="txt-besin"><b>Beslenme Durumu:</b> Beslendi</div>
-          <div class="txt-saglik"><b>Sağlık Durumu:</b> Hastanede</div>
-          <div class="txt-lokasyon">Uzakta!</div>
-        </div>
-      </div>
-
+    <div class="dost-info">
+      <div class="txt-name">OSCAR</div>
+      <div class="txt-besin"><b>Beslenme:</b> Beslendi</div>
+      <div class="txt-saglik"><b>Sağlık:</b> Tehlikede</div>
+      <div class="txt-lokasyon">Biraz Uzak!</div>
     </div>
+    </a>
+  </div>
+
+  <div class="dost-container">
+    <a [routerLink]="['/dost/:dostName/bilgi']">
+    <div class="photo-container">
+    <img src="/src/assets/images/profile1.jpg" />
+    </div>
+    <div class="dost-info">
+      <div class="txt-name">OSCAR</div>
+      <div class="txt-besin"><b>Beslenme:</b> Beslendi</div>
+      <div class="txt-saglik"><b>Sağlık:</b> Hastanede</div>
+      <div class="txt-lokasyon">Uzakta!</div>
+    </div>
+    </a>
+  </div>
+
+</div>

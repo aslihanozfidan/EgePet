@@ -1,22 +1,21 @@
 <div class="start-container start-alignment">
+        <img src="/../assets/images/bg.jpg" style="background-repeat: no-repeat;width: 100%;height: 100%;position: absolute;z-index: -1;"/>
+
     <div class="start-content">
         <div class="start-inside">
-            <div class="txt-forgot">ŞİFREMİ UNUTTUM</div>
-            
-            <br/><br/>
             <md-input-container>
                 <input mdInput placeholder="E-posta adresinizi giriniz" value="">
             </md-input-container>
           
             <br/>
             <div class="button-container">
-                <a href="">
+                 <a [routerLink]="['/home']">
                     <div class="button-login">
                         Giriş Yap
                     </div>
                 </a>
                 <br/>
-                <a href="">
+                 <a [routerLink]="['']">
                     <div class="button-forgot">
                         ŞİFREMİ HATIRLAT
                     </div>

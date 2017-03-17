@@ -1,5 +1,6 @@
 .start-container{
-    height: 100%;
+    min-height: 600px;
+    height: auto;
     text-align: center;
     background-color: #bfc6d0;
 }
@@ -60,7 +61,12 @@
     width:33.3%;
     text-align: center;
     color:#2b3f60;
-    font-weight: bold;
+    font-weight: bold;    
+}
+
+.dost-info a{
+    text-decoration: none;
+    color:#2b3f60;
 }
 
 .dost-info li:last-child, .dost-info li:first-child{

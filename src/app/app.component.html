@@ -1,17 +1,19 @@
 <div style="height:100%">
     <md-toolbar color="primary">
-        <ul class="top-nav">
-            <li style="padding-left: 1em;">
+        <div class="top-nav">
+            <img src=".\src\assets\images\logo.png">
+            <!-- <li style="padding-left: 1em;">
                 <span *ngIf="isMobile" (tap)="hideNav()">
                 <md-icon>menu</md-icon>
             </span>
-            </li>
+            </li> 
             <li><img src=".\src\assets\images\logo.png" style="height: 30px;"></li>
-
-        </ul>
+-->
+        </div>
     </md-toolbar>
 
-    <md-sidenav-container>
+   <md-sidenav-container>
+        <!--
         <md-sidenav *ngIf="isMobile" #start mode="over" opened="false" (open)="closeStartButton.focus()">
             <div class="nav-container">
                 <div class="nav-item" (tap)="start.close()">
@@ -58,7 +60,7 @@
                 </div>
             </div>
         </md-sidenav>
-
+-->
         <div class="content">
             <div class="app-main-container">
                 <router-outlet></router-outlet>
@@ -67,7 +69,7 @@
 
     </md-sidenav-container>
 
-    <div class="app-footer-container" color="primary">
+    <div class="app-footer-container" color="primary"  template="ngIf this.router.url!=homePageUrl && this.router.url!=forgotPageUrl">
         <ul>
             <li>
                 <a [routerLink]="['bildirimler']">
@@ -80,7 +82,12 @@
                 </a>
             </li>
             <li>
-                <a [routerLink]="['profil']">
+                <a [routerLink]="['']">
+                    <md-icon>photo_camera</md-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['profil/bilgi']">
                     <md-icon>person</md-icon>
                 </a>
             </li>

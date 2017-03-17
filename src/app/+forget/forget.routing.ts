@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ForgetComponent } from './forget/forget.component';
 
 const routes: Routes = [
-  { path: '', component: ForgetComponent },
+  { path: 'sifremiunuttum', component: ForgetComponent },
 ];
 
 @NgModule({

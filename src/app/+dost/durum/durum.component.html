@@ -1,1 +1,24 @@
-durum
+<div class="durum-container">
+    <md-input-container>
+        <input mdInput placeholder="Durum konusunu seçiniz" value="">
+    </md-input-container>
+    <br/>
+    <md-input-container>
+        <input mdInput placeholder="Durumu giriniz" value="">
+    </md-input-container>
+    <br/>
+    <md-input-container>
+        <input mdInput placeholder="Not girebilirsiniz" value="">
+    </md-input-container>
+    <br/>
+    <div class="durum-buttons-container">
+    <md-checkbox ng-model="true" aria-label="Yer Bildir" class="cbx-location">
+        Yer Bildir
+    </md-checkbox>
+    <a [routerLink]="['']" class="lnk-login">
+        <div class="button-login">
+            Gönder
+        </div>
+    </a>
+    </div>
+</div>

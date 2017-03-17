@@ -1,14 +1,30 @@
 <div class="start-container">
-   <div class="uye-slider">
-        <img src="../assets/images/slider1.jpg"/>
-   </div>
-   <div class="profile-photo">
-       <img src="/src/assets/images/uye1.jpg"/>
-   </div>
-   <div class="uye-info-container">
-       <ul class="uye-info">         
-           <li>John DOE</li>
-       </ul>
-   </div>
-   <router-outlet></router-outlet>
+    <div class="profile-info-container">
+        <a [routerLink]="['mesajlar']">
+        <md-icon class="icon-message">message</md-icon>
+        <div class="txt-info">Mesaj Gönder</div>
+        </a>
+    </div>
+    <div class="profile-info-container">
+        <a [routerLink]="['']">
+        <md-icon class="icon-favorite">done_all</md-icon>
+        <div class="txt-info">Teşekkür Et</div>
+        </a>
+    </div>
+    <div class="profile-info-container">
+        <a [routerLink]="['/profil/sifredegistir']">
+        <md-icon class="icon-message">settings</md-icon>
+        <div class="txt-info">Şifremi Değiştir</div>
+        </a>
+    </div>
+
+    <div class="volunteer-container">
+        <div class="volunteer">
+            <div class="baslik-volunteer">Dostlarım (4)</div>
+            <img src="/src/assets/images/profile1.jpg" />
+            <img src="/src/assets/images/profile1.jpg" />
+            <img src="/src/assets/images/profile1.jpg" />
+            <img src="/src/assets/images/profile1.jpg" />
+        </div>
+    </div>
 </div>

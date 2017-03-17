@@ -1,9 +1,6 @@
 .start-container{
-    min-height:605px;
+    min-height:705px;
     text-align: center;
-     background-image: url("/../assets/images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%; 
 }
 .start-alignment{
     display: flex;
@@ -12,15 +9,18 @@
     margin-top: 2px;
 }
 .start-content{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('/../assets/images/bg_forget.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     width:80%;
-    min-height: 200px;
+    min-height: 300px;
     margin:auto;
+    margin-top:60px;
 }
 
 .start-inside{
-    padding-top: 30px;
-    width: 65%;
+    padding-top: 90px;
+    width: 75%;
     margin: auto;
 }
 
@@ -49,9 +49,10 @@
     margin: auto;
     height: 30px;
     width:150px;
-    text-align: center;
+    text-align: right;
     line-height: 30px;
     font-weight: 500;
+    font-size: 13px;
 }
 
 .button-forgot{

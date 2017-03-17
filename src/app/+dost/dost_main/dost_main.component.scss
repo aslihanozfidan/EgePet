@@ -1,5 +1,6 @@
 .start-container{
-    height: 100%;
+    min-height: 600px;
+    height: auto;
     text-align: center;
     background-color: #bfc6d0;
 }
@@ -126,6 +127,8 @@
     margin-top: 10px;
     background-color: #2b3f60;
     border-bottom:2px solid #ffffff;
+    position: absolute;
+    bottom:42px;
 }
 
 .location-volunteer{

@@ -16,10 +16,13 @@ declare var PouchDB: any;
 })
 
 // App component initilization with OnInit and OnDestroy life cycle callbacks
-export class AppComponent implements OnInit,OnDestroy {
+export class AppComponent implements OnInit,OnDestroy { 
+  goster:boolean;
   title = 'app works!';
   localUser:any;
   db:any;
+  homePageUrl="/home"
+  forgotPageUrl="/sifremiunuttum"
   private url;
   private user;
   private sList;
